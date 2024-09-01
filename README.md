@@ -1,17 +1,3 @@
-Here’s a resume based on your experience with the data analytics bootcamp:
-
----
-
-**Catherine Matthews**  
-1701 Tulip Street
-[City, State, Zip]  
-[Phone Number]  
-[Email Address]  
-[LinkedIn Profile]  
-[Portfolio Website (if applicable)]
-
----
-
 ### **Objective**
 A motivated and analytical professional with a strong foundation in data analytics, seeking an entry-level position to leverage technical skills in data analysis, statistical modeling, and data visualization to support data-driven decision-making processes.
 
