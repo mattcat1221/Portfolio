@@ -1,16 +1,25 @@
-/* Apply New Amsterdam font to body and h1 elements */
-body, h1 {
-    font-family: "New Amsterdam", sans-serif;
-}
-
 body {
     background: #e68968;
     margin: 0; /* Remove default margin */
     padding: 20px; /* Add padding to leave some room around the edges */
     box-sizing: border-box;
+    font-family: "New Amsterdam", sans-serif; /* Apply font to the whole body */
+}
+
+header {
+    text-align: center; /* Center-align the content in the header */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.name {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-size: 2rem; /* Same size as h1, adjust as needed */
+    margin: 0; /* Remove default margin */
 }
 
 h1 {
+    font-family: "New Amsterdam", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -87,6 +96,16 @@ main {
     position: relative;
     display: inline-block;
     text-align: center;
+}
+
+.card {
+    text-align: center; /* Center align text below the images */
+}
+
+.card img {
+    max-width: 100px; /* or any size appropriate for your layout */
+    height: auto;
+    display: block;
 }
 
 .small-icon {
