@@ -34,3 +34,63 @@ main {
 .card img {
     width: 100%;
 }
+
+
+#apps {
+    display: flex;
+    gap: 20px; /* Space between images */
+}
+
+.card {
+    text-align: center; /* Center align text below the images */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures images stay within the container */
+}
+.card img {
+    max-width: 100px; /* or any size appropriate for your layout */
+    height: auto;
+    display: block;
+}
+#apps {
+    display: flex;
+    gap: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info {
+    margin-top: 20px;
+}
+.small-image {
+    width: 50%;
+}
+.project {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px; /* Add space between projects */
+}
+
+.project-link {
+    position: absolute;
+    top: 20px; /* Adjust this value to move the link up/down */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Adds a background for better readability */
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.small-image {
+    width: 50%; /* Adjust the size of the image */
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
