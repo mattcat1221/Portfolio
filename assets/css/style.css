@@ -1,3 +1,8 @@
+/* Apply New Amsterdam font to body and h1 elements */
+body, h1 {
+    font-family: "New Amsterdam", sans-serif;
+}
+
 body {
     background: #e68968;
     margin: 0; /* Remove default margin */
@@ -6,7 +11,6 @@ body {
 }
 
 h1 {
-    font-family: "New Amsterdam", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -40,29 +44,16 @@ main {
 }
 
 .card img {
-<<<<<<< HEAD
     max-width: 100px; /* Adjust the image size */
     height: auto;
     display: block;
 }
 
-=======
-    width: 100%;
-}
-
-
-<<<<<<< HEAD
-=======
->>>>>>> 14840c9 (index)
->>>>>>> temp-branch
 #apps {
     display: flex;
     gap: 20px; /* Space between images */
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 .info {
     margin-top: 20px;
 }
@@ -97,37 +88,11 @@ main {
     display: inline-block;
     text-align: center;
 }
-=======
->>>>>>> temp-branch
-.card {
-    text-align: center; /* Center align text below the images */
-}
 
-.card img {
-    max-width: 100%;
-    height: auto;
-    display: block; /* Ensures images stay within the container */
-}
-.card img {
-    max-width: 100px; /* or any size appropriate for your layout */
+.small-icon {
+    width: 100px; /* Adjust this value to make the icon smaller or larger */
     height: auto;
     display: block;
+    margin: 10px 0; /* Add some space around the image */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
 }
-#apps {
-    display: flex;
-    gap: 20px;
-}
-
-.card img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.info {
-    margin-top: 20px;
-}
-<<<<<<< HEAD
-=======
->>>>>>> 14840c9 (index)
->>>>>>> temp-branch
