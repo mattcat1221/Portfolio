@@ -1,7 +1,9 @@
 body {
     background: #e68968;
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding to leave some room around the edges */
+    box-sizing: border-box;
 }
-
 
 h1 {
     font-family: "New Amsterdam", sans-serif;
@@ -10,37 +12,93 @@ h1 {
 }
 
 main {
-    float: none;
+    max-width: 1200px; /* Limit the content width */
+    margin: 0 auto; /* Center the content on the page */
+    padding: 20px; /* Add padding inside the main container */
+    background-color: #f2a391; /* Light terracotta background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for separation */
+    border-radius: 8px; /* Optional: Rounding the corners */
 }
 
 #aboutMe {
-    float: none;
-
     font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 #me {
     float: left;
     width: 40%;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .card {
     width: 30%;
     border-radius: 12px;
     overflow: hidden;
+    text-align: center; /* Center align text below the images */
 }
 
 .card img {
+<<<<<<< HEAD
+    max-width: 100px; /* Adjust the image size */
+    height: auto;
+    display: block;
+}
+
+=======
     width: 100%;
 }
 
 
+<<<<<<< HEAD
+=======
+>>>>>>> 14840c9 (index)
+>>>>>>> temp-branch
 #apps {
     display: flex;
     gap: 20px; /* Space between images */
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.info {
+    margin-top: 20px;
+}
+
+.project {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px; /* Add space between projects */
+}
+
+.project-link {
+    position: absolute;
+    top: 10px; /* Adjust this value to move the link up/down */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Adds a background for better readability */
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1;
+}
+
+.small-image {
+    width: 100%; /* Adjust the size of the image */
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.project-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+=======
+>>>>>>> temp-branch
 .card {
     text-align: center; /* Center align text below the images */
 }
@@ -69,3 +127,7 @@ main {
 .info {
     margin-top: 20px;
 }
+<<<<<<< HEAD
+=======
+>>>>>>> 14840c9 (index)
+>>>>>>> temp-branch
