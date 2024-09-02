@@ -40,16 +40,24 @@ main {
 }
 
 .card img {
+<<<<<<< HEAD
     max-width: 100px; /* Adjust the image size */
     height: auto;
     display: block;
 }
 
+=======
+    width: 100%;
+}
+
+
+>>>>>>> 14840c9 (index)
 #apps {
     display: flex;
     gap: 20px; /* Space between images */
 }
 
+<<<<<<< HEAD
 .info {
     margin-top: 20px;
 }
@@ -84,3 +92,33 @@ main {
     display: inline-block;
     text-align: center;
 }
+=======
+.card {
+    text-align: center; /* Center align text below the images */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures images stay within the container */
+}
+.card img {
+    max-width: 100px; /* or any size appropriate for your layout */
+    height: auto;
+    display: block;
+}
+#apps {
+    display: flex;
+    gap: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info {
+    margin-top: 20px;
+}
+>>>>>>> 14840c9 (index)
