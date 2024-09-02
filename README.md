@@ -28,7 +28,7 @@ University of Pennsylvania – Philadelphia, PA
 
 ### **Projects**
 
-**Biodiversity Analysis**  
+**Leaflet Analysis**  
 *Data Visualization Application*  
 - Developed an interactive data visualization web application using HTML, CSS, JavaScript, and Leaflet to map and analyze geographic data.
 - Integrated data from APIs and used Python for data cleaning and manipulation.
