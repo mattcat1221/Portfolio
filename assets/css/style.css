@@ -1,3 +1,18 @@
+/* Apply New Amsterdam font to body and h1 elements */
+body, h1 {
+    font-family: "New Amsterdam", sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.name {
+    font-size: 3.5em;
+    margin: 0;
+}
+
 body {
     background: #e68968;
     margin: 0; /* Remove default margin */
@@ -6,18 +21,32 @@ body {
 }
 
 h1 {
-    font-family: "New Amsterdam", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 main {
     max-width: 1200px; /* Limit the content width */
-    margin: 0 auto; /* Center the content on the page */
+    margin: 20px auto; /* Center the content on the page */
     padding: 20px; /* Add padding inside the main container */
     background-color: #f2a391; /* Light terracotta background color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for separation */
     border-radius: 8px; /* Optional: Rounding the corners */
+    border: 2px solid #000;
+    box-shadow: 5px 10px 5px black;
+}
+
+.app{
+    width: 40%;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.app img{
+    width: 100%;
 }
 
 #aboutMe {
@@ -32,6 +61,13 @@ main {
     margin-bottom: 20px;
 }
 
+#vba {
+    width: 70%;
+    border-radius: 12px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
 .card {
     width: 30%;
     border-radius: 12px;
@@ -40,29 +76,17 @@ main {
 }
 
 .card img {
-<<<<<<< HEAD
     max-width: 100px; /* Adjust the image size */
     height: auto;
     display: block;
 }
 
-=======
-    width: 100%;
-}
-
-
-<<<<<<< HEAD
-=======
->>>>>>> 14840c9 (index)
->>>>>>> temp-branch
 #apps {
     display: flex;
     gap: 20px; /* Space between images */
+    justify-content: space-around;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 .info {
     margin-top: 20px;
 }
@@ -97,37 +121,11 @@ main {
     display: inline-block;
     text-align: center;
 }
-=======
->>>>>>> temp-branch
-.card {
-    text-align: center; /* Center align text below the images */
-}
 
-.card img {
-    max-width: 100%;
-    height: auto;
-    display: block; /* Ensures images stay within the container */
-}
-.card img {
-    max-width: 100px; /* or any size appropriate for your layout */
+.small-icon {
+    width: 100px; /* Adjust this value to make the icon smaller or larger */
     height: auto;
     display: block;
+    margin: 10px 0; /* Add some space around the image */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
 }
-#apps {
-    display: flex;
-    gap: 20px;
-}
-
-.card img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.info {
-    margin-top: 20px;
-}
-<<<<<<< HEAD
-=======
->>>>>>> 14840c9 (index)
->>>>>>> temp-branch
