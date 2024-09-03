@@ -1,36 +1,52 @@
+/* Apply New Amsterdam font to body and h1 elements */
+body, h1 {
+    font-family: "New Amsterdam", sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.name {
+    font-size: 3.5em;
+    margin: 0;
+}
+
 body {
     background: #e68968;
     margin: 0; /* Remove default margin */
     padding: 20px; /* Add padding to leave some room around the edges */
     box-sizing: border-box;
-    font-family: "New Amsterdam", sans-serif; /* Apply font to the whole body */
-}
-
-header {
-    text-align: center; /* Center-align the content in the header */
-    margin-bottom: 20px; /* Space below the header */
-}
-
-.name {
-    font-family: "New Amsterdam", sans-serif;
-    font-weight: 400;
-    font-size: 2rem; /* Same size as h1, adjust as needed */
-    margin: 0; /* Remove default margin */
 }
 
 h1 {
-    font-family: "New Amsterdam", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 main {
     max-width: 1200px; /* Limit the content width */
-    margin: 0 auto; /* Center the content on the page */
+    margin: 20px auto; /* Center the content on the page */
     padding: 20px; /* Add padding inside the main container */
     background-color: #f2a391; /* Light terracotta background color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for separation */
     border-radius: 8px; /* Optional: Rounding the corners */
+    border: 2px solid #000;
+    box-shadow: 5px 10px 5px black;
+}
+
+.app{
+    width: 40%;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.app img{
+    width: 100%;
 }
 
 #aboutMe {
@@ -43,6 +59,13 @@ main {
     width: 40%;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+#vba {
+    width: 70%;
+    border-radius: 12px;
+    border: 2px solid black;
+    margin: 0 auto;
 }
 
 .card {
@@ -61,6 +84,7 @@ main {
 #apps {
     display: flex;
     gap: 20px; /* Space between images */
+    justify-content: space-around;
 }
 
 .info {
@@ -96,16 +120,6 @@ main {
     position: relative;
     display: inline-block;
     text-align: center;
-}
-
-.card {
-    text-align: center; /* Center align text below the images */
-}
-
-.card img {
-    max-width: 100px; /* or any size appropriate for your layout */
-    height: auto;
-    display: block;
 }
 
 .small-icon {
