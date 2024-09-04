@@ -128,4 +128,5 @@ main {
     display: block;
     margin: 10px 0; /* Add some space around the image */
     cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
+
 }
