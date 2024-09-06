@@ -50,16 +50,47 @@ main {
     width: 70%;
 }
 
+figcaption {
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
 #aboutMe {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #me {
-    float: left;
-    width: 40%;
-    margin-right: 20px;
+    width: 45%;
+    margin-right: 50px;
     margin-bottom: 20px;
+}
+
+#me img {
+    width: 100%;
+    border-radius: 21%;
+    border: 2px solid;
+}
+
+#details {
+    width: 45%;
+}
+
+#details h2 {
+    text-decoration: underline;
+    color: #7a80d8;
+}
+
+.details {
+    overflow: hidden;
+    
+}
+
+#education {
+    height: 0;
 }
 
 #vba {
