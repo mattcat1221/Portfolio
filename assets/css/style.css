@@ -78,19 +78,23 @@ figcaption {
 #details {
     width: 45%;
 }
+.text-container {
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word; /* New standard property */
+}
 
 #details h2 {
     text-decoration: underline;
-    color: #7a80d8;
+    color: black;
 }
 
 .details {
     overflow: hidden;
-    
+
 }
 
 #education {
-    height: 0;
+    height: auto;
 }
 
 #vba {
@@ -170,4 +174,61 @@ figcaption {
 }
 .contacts {
 
+}
+/* Ensure the header and list align to the left */
+h2 {
+    text-align: left; /* Align the heading to the left */
+}
+
+.details ul {
+    list-style-type: disc; /* Show bullet points */
+    padding-left: 20px; /* Add space on the left for bullets */
+    margin-left: 0; /* Ensure no extra margin */
+    text-align: left; /* Align the list items to the left */
+}
+
+.details li {
+    margin-bottom: 10px; /* Optional: add space between list items */
+    text-align: left; /* Ensure the text aligns to the left */
+}
+
+/* Example class for text-containing elements */
+.text-container {
+    max-width: 100%; /* Ensure the container does not exceed the parent width */
+    word-wrap: break-word; /* Break long words onto the next line */
+    overflow-wrap: break-word; /* Alternative for better browser compatibility */
+    white-space: normal; /* Ensure text wraps normally, not in a single line */
+}
+
+/* Flexbox or grid wrapping (if applicable) */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure flex items wrap inside the flex container */
+    gap: 10px; /* Space between items */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid that wraps */
+    gap: 20px; /* Space between grid items */
+}
+
+/* For links, buttons, or inline elements that need wrapping */
+a, .button {
+    word-wrap: break-word; /* Allow long links or button text to wrap */
+    white-space: normal;
+}
+
+/* Adjust headers to wrap if needed */
+h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/* Image captions or text with figures */
+figcaption {
+    max-width: 100%;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: center; /* Center-align caption text */
 }
