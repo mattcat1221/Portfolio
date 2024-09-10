@@ -20,10 +20,22 @@ body {
     box-sizing: border-box;
 }
 
+#aboutMe {
+    display: flex;
+    justify-content: space-between;
+}
+
+figure {
+    width: 40%;
+}
+
+#aboutMe>div {
+    width: 45%;
+}
+
 h1 {
     font-weight: 400;
     font-style: normal;
-    text-align: center;
 }
 
 main {
@@ -32,7 +44,7 @@ main {
     padding: 20px; /* Add padding inside the main container */
     background-color: #f2a391; /* Light terracotta background color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for separation */
-    border-radius: 8px; /* Rounding the corners */
+    border-radius: 8px; /* Optional: Rounding the corners */
     border: 2px solid #000;
     box-shadow: 5px 10px 5px black;
 }
@@ -47,54 +59,16 @@ main {
 }
 
 .app img{
-    width: 70%;
-}
-
-figcaption {
-    text-align: center;
-    font-size: 3rem;
-    
+    width: 100%;
 }
 
 #aboutMe {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
 }
 
 #me {
-    width: 45%;
-    margin-right: 50px;
-    margin-bottom: 20px;
-}
-
-#me img {
     width: 100%;
-    border-radius: 21%;
-    border: 2px solid;
-}
-
-#details {
-    width: 45%;
-}
-.text-container {
-    word-wrap: break-word; /* Break long words */
-    overflow-wrap: break-word; /* New standard property */
-}
-
-#details h2 {
-    text-decoration: underline;
-    color: black;
-}
-
-.details {
-    overflow: hidden;
-
-}
-
-#education {
-    height: auto;
 }
 
 #vba {
@@ -115,12 +89,6 @@ figcaption {
     max-width: 100px; /* Adjust the image size */
     height: auto;
     display: block;
-}
-.large-image {
-    width: 300px; /* Set a larger width */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    margin: 0 auto; /* Center the image */
 }
 
 #apps {
@@ -170,65 +138,14 @@ figcaption {
     display: block;
     margin: 10px 0; /* Add some space around the image */
     cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
-
-}
-.contacts {
-
-}
-/* Ensure the header and list align to the left */
-h2 {
-    text-align: left; /* Align the heading to the left */
 }
 
-.details ul {
-    list-style-type: disc; /* Show bullet points */
-    padding-left: 20px; /* Add space on the left for bullets */
-    margin-left: 0; /* Ensure no extra margin */
-    text-align: left; /* Align the list items to the left */
+.details > div {
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
 }
 
-.details li {
-    margin-bottom: 10px; /* Optional: add space between list items */
-    text-align: left; /* Ensure the text aligns to the left */
-}
-
-/* Example class for text-containing elements */
-.text-container {
-    max-width: 100%; /* Ensure the container does not exceed the parent width */
-    word-wrap: break-word; /* Break long words onto the next line */
-    overflow-wrap: break-word; /* Alternative for better browser compatibility */
-    white-space: normal; /* Ensure text wraps normally, not in a single line */
-}
-
-/* Flexbox or grid wrapping (if applicable) */
-.flex-container {
-    display: flex;
-    flex-wrap: wrap; /* Ensure flex items wrap inside the flex container */
-    gap: 10px; /* Space between items */
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid that wraps */
-    gap: 20px; /* Space between grid items */
-}
-
-/* For links, buttons, or inline elements that need wrapping */
-a, .button {
-    word-wrap: break-word; /* Allow long links or button text to wrap */
-    white-space: normal;
-}
-
-/* Adjust headers to wrap if needed */
-h1, h2, h3, h4, h5, h6 {
-    word-wrap: break-word;
-    white-space: normal;
-}
-
-/* Image captions or text with figures */
-figcaption {
-    max-width: 100%;
-    word-wrap: break-word;
-    white-space: normal;
-    text-align: center; /* Center-align caption text */
+.details:hover > div {
+    height: 200px;
 }
