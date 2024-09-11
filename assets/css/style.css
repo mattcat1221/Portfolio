@@ -134,10 +134,10 @@ main {
 .details > div {
     transition: height 1s;
 }
-/* 
 .details:hover > div, .details:active > div{
     height: 200px;
-} */
+} 
+
 
 .h200{
     height: 250px;
@@ -155,6 +155,41 @@ h2 {
     text-decoration: underline;
 }
 
-/* :root * {
-    border: 1px solid black; */
+#skillIcon {
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+#skillIcon figure {
+    width: 2.5%;
+    margin: .4%;
+}
+
+#skillIcon figure figcaption{
+    color: white;
+    height: 0;
+    overflow: hidden;
+}
+
+#skillIcon figure img{
+    width: 100%;
+}
+
+#skillIcon figure:hover {
+    transform: scale(300%);
+    background: black;
+    padding: 10px;
+    border-radius: 25px;
+    overflow: visible;
+}
+
+#skillIcon figure:hover figcaption {
+    height: 100%;
+}
+
+ :root * {
+    transition: all 0.5s;
 }
