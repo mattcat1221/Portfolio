@@ -9,7 +9,7 @@ header {
 }
 
 .name {
-    font-size: 3.5em;
+    font-size: 4.5rem;
     margin: 0;
 }
 
@@ -34,7 +34,7 @@ figure {
 }
 
 h1 {
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -56,6 +56,9 @@ main {
 
 #me {
     width: 100%;
+    box-shadow: 2px 2px 1px 0 #666;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
 }
 
 #vba {
