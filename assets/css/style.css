@@ -5,11 +5,12 @@ body, h1 {
 
 header {
     text-align: center;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .name {
-    font-size: 5.5rem;
+    font-size: 8rem;
     margin: 0;
 }
 
@@ -25,8 +26,11 @@ body {
     justify-content: space-between;
 }
 
-figure {
-    width: 40%;
+#aboutMe figure {
+    width: 30%;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
 }
 
 #aboutMe>div {
@@ -51,7 +55,6 @@ main {
 
 #aboutMe {
     font-size: 1.5rem;
-    margin-bottom: 20px;
 }
 
 #me {
@@ -76,23 +79,51 @@ main {
 }
 
 .app{
-    width: 300px;
+    width: 400px;
+    height: 600PX;
     border: 2px solid #000;
     border-radius: 8px;
     text-align: center;
-
+    position: relative;
 }
 
 .app img{
     width: 100%;
-    height: 350px;
+    height: 100%;
     border-radius: 8px 8px 0 0;
 }
 
 .info {
-    background: #1f1b1b;
+    height: 20% ;
+    background: #111111bd;
     color: white;
     border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 30%;
+}
+
+.app:nth-child(odd) {
+    rotate: -5deg;
+}
+
+.app:nth-child(odd) .info {
+    rotate: 5deg;
+    right: -120%;
+    
+}
+
+.app:nth-child(even) {
+    rotate: 5deg;
+    margin-top: 50%;
+}
+
+.app:nth-child(even) .info {
+    rotate: -5deg;
+    right: 120%;
+
 }
 
 .project {
@@ -134,21 +165,38 @@ main {
     cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
 }
 
-.details > div {
-    transition: height 1s;
+.details h2 {
+    padding: 5px;
 }
-.details:hover > div, .details:active > div{
+
+.details {
+    transition: all 5s;
+}
+
+.details h2:hover, .details h2:active {
+    background: black;
+    color: white;
+    border-radius: 8px;
+}
+
+.focus {
+    background: black;
+    color: white;
+    border-radius: 8px;
+}
+
+/* .details:hover > div, .details:active > div{
     height: 200px;
-} 
+}  */
 
 
 .h200{
-    height: 250px;
     overflow: hidden;
+    height: fit-content;
 }
 
 .h0{
-    height: 0px;
+    height: 0;
     overflow: hidden;
 }
 
@@ -168,13 +216,17 @@ h2 {
 
 #skillIcon figure {
     width: 2.5%;
-    margin: .4%;
+    margin: 15px .4% 0px;
+    position: relative;
 }
 
 #skillIcon figure figcaption{
     color: white;
     height: 0;
     overflow: hidden;
+    position: absolute;
+    top: -20px;
+    left: -5px;
 }
 
 #skillIcon figure img{
@@ -191,8 +243,12 @@ h2 {
 
 #skillIcon figure:hover figcaption {
     height: 100%;
+    width: 200px;
 }
 
  :root * {
     transition: all 0.5s;
 }
+ <style>{="font-size: 50px:
+
+ }
