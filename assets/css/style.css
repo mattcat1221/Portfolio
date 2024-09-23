@@ -106,22 +106,22 @@ main {
 }
 
 .app:nth-child(odd) {
-    rotate: -5deg;
+    rotate: 0deg;
 }
 
 .app:nth-child(odd) .info {
-    rotate: 5deg;
+    rotate: 0deg;
     right: -120%;
     
 }
 
 .app:nth-child(even) {
-    rotate: 5deg;
+    rotate: 0deg;
     margin-top: 50%;
 }
 
 .app:nth-child(even) .info {
-    rotate: -5deg;
+    rotate: 0deg;
     right: 120%;
 
 }
@@ -196,7 +196,7 @@ main {
 }
 
 .h0{
-    height: 0;
+    height: 5px;
     overflow: hidden;
 }
 
