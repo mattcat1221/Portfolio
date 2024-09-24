@@ -79,51 +79,29 @@ main {
 }
 
 .app{
-    width: 400px;
+    width: 45%;
+    max-width: 400px;
     height: 600PX;
     border: 2px solid #000;
     border-radius: 8px;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .app img{
     width: 100%;
-    height: 100%;
+    height: 80%;
     border-radius: 8px 8px 0 0;
 }
 
 .info {
-    height: 20% ;
-    background: #111111bd;
+    background: #07d0f3bd;
     color: white;
-    border: 1px solid black;
     border-radius: 8px;
-    padding: 10px;
-    position: absolute;
+    height: 20%;
     width: 100%;
-    bottom: 30%;
-}
-
-.app:nth-child(odd) {
-    rotate: -5deg;
-}
-
-.app:nth-child(odd) .info {
-    rotate: 5deg;
-    right: -120%;
-    
-}
-
-.app:nth-child(even) {
-    rotate: 5deg;
-    margin-top: 50%;
-}
-
-.app:nth-child(even) .info {
-    rotate: -5deg;
-    right: 120%;
-
 }
 
 .project {
