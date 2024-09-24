@@ -1,193 +1,254 @@
-/* Body and Main Layout */
+/* Apply New Amsterdam font to body and h1 elements */
 body, h1 {
     font-family: "New Amsterdam", sans-serif;
 }
 
 header {
     text-align: center;
-    padding: 20px;
-    margin-bottom: 30px; 
+    margin: 0;
+    padding: 0;
 }
 
 .name {
-    font-size: 3.5em;
+    font-size: 8rem;
     margin: 0;
 }
 
 body {
     background: #e68968;
-    margin: 0;
-    padding: 20px;
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding to leave some room around the edges */
     box-sizing: border-box;
 }
 
-h1 {
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-}
-#details h2:first-of-type {
-    margin-top: 30px; /* Add space above the "Objective" */
-}
-
-p, ul {
-    overflow: hidden;
-}
-
-main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f2a391;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    border: 2px solid #000;
-    box-shadow: 5px 10px 5px black;
-}
-
-/* Restore Image Styling with Light Peach Borders */
-#me {
-    width: 85%;
-    margin-right: 50px;
-    margin-bottom: 20px;
-    border: 3px solid #f2a391;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 20%; /* Optional: Adjust border radius */
-    border: 3px solid #f2a391; /* Optional: Border around the image */
-    display: block;
-    margin: 0 auto; /* Center the image */
-}
-
-#me img {
-    width: 80%; /* Increase the width of the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 20%; /* Optional: Adjust border radius */
-    border: 3px solid #f2a391; /* Optional: Border around the image */
-    display: block;
-    margin: 0 auto; /* Center the image */
-}
-
-#details {
-    width: 80%;
-    border: 2px solid;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.details div {
-    transition: all 2s;
-}
-
-/* Card and App Layout */
-.app {
-    width: 40%;
-    border: 2px solid #000;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-    background-color: transparent;
-}
-
-.app img {
-    width: 70%;
-}
-
-figcaption {
-    text-align: center;
-    font-size: 3rem;
-}
-
-/* About Me Section */
 #aboutMe {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
 
-/* App and Grid Layout */
+#aboutMe figure {
+    width: 30%;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#aboutMe>div {
+    width: 45%;
+}
+
+h1 {
+    font-weight: 300;
+    font-style: normal;
+}
+
+main {
+    max-width: 1200px; /* Limit the content width */
+    margin: 20px auto; /* Center the content on the page */
+    padding: 20px; /* Add padding inside the main container */
+    background-color: #f2a391; /* Light terracotta background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for separation */
+    border-radius: 8px; /* Optional: Rounding the corners */
+    border: 2px solid #000;
+    box-shadow: 5px 10px 5px black;
+}
+
+#aboutMe {
+    font-size: 1.5rem;
+}
+
+#me {
+    width: 100%;
+    box-shadow: 2px 2px 1px 0 #666;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+#vba {
+    width: 70%;
+    border-radius: 12px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
 #apps {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between images */
     justify-content: space-around;
 }
 
-/* Additional Styling */
-.details {
-    overflow: hidden;
+.app{
+    width: 400px;
+    height: 600PX;
+    border: 2px solid #000;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
 }
 
-/* Third Image Styling (Cryptocurrency image) */
-#crypto {
-    width: 60%;
-    border-radius: 12px;
-    border: 2px solid peachpuff; /* Light peach thin border */
-    margin: 0 auto;
-}
-
-/* Cryptocurrency Image (kept in the layout) */
-.cryptocurrency-image {
-    width: 50%;
-    border: 2px solid peachpuff; /* Light peach border */
-    margin: 0 auto;
-    display: block;
-}
-
-/* Card Image */
-.card img {
-    width: 100px;
-    height: auto;
-    display: block;
-}
-
-/* Image Wrapper */
-.small-image {
+.app img{
     width: 100%;
-    display: block;
-    margin: 0 auto;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
-/* Project Layout */
+.info {
+    height: 20% ;
+    background: #111111bd;
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 30%;
+}
+
+.app:nth-child(odd) {
+    rotate: -5deg;
+}
+
+.app:nth-child(odd) .info {
+    rotate: 5deg;
+    right: -120%;
+    
+}
+
+.app:nth-child(even) {
+    rotate: 5deg;
+    margin-top: 50%;
+}
+
+.app:nth-child(even) .info {
+    rotate: -5deg;
+    right: 120%;
+
+}
+
 .project {
     position: relative;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Add space between projects */
 }
 
-/* Project links over the images */
 .project-link {
     position: absolute;
-    top: 10px;
+    top: 10px; /* Adjust this value to move the link up/down */
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); /* Adds a background for better readability */
     color: white;
     padding: 5px 10px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners */
     z-index: 1;
 }
 
+.small-image {
+    width: 100%; /* Adjust the size of the image */
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.project-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
 .small-icon {
-    width: 100px;
+    width: 100px; /* Adjust this value to make the icon smaller or larger */
     height: auto;
     display: block;
-    margin: 10px 0;
-    cursor: pointer;
+    margin: 10px 0; /* Add some space around the image */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
 }
 
-/* Restore Image and Other App Images */
-#tax, #other-app-image {
-    width: 60%;
-    border-radius: 12px;
-    border: 2px solid peachpuff; /* Light peach thin border */
-    margin: 0 auto;
+.details h2 {
+    padding: 5px;
 }
 
-#details h2:first-of-type {
-    margin-top: 30px; /* Add space above the "Objective" */
+.details {
+    transition: all 5s;
 }
 
+.details h2:hover, .details h2:active {
+    background: black;
+    color: white;
+    border-radius: 8px;
+}
+
+.focus {
+    background: black;
+    color: white;
+    border-radius: 8px;
+}
+
+/* .details:hover > div, .details:active > div{
+    height: 200px;
+}  */
+
+
+.h200{
+    overflow: hidden;
+    height: fit-content;
+}
+
+.h0{
+    height: 0;
+    overflow: hidden;
+}
+
+h2 {
+    color: dark grey;
+    margin: 3px;
+    text-decoration: underline;
+}
+
+#skillIcon {
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+#skillIcon figure {
+    width: 2.5%;
+    margin: 15px .4% 0px;
+    position: relative;
+}
+
+#skillIcon figure figcaption{
+    color: white;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: -20px;
+    left: -5px;
+}
+
+#skillIcon figure img{
+    width: 100%;
+}
+
+#skillIcon figure:hover {
+    transform: scale(300%);
+    background: black;
+    padding: 10px;
+    border-radius: 25px;
+    overflow: visible;
+}
+
+#skillIcon figure:hover figcaption {
+    height: 100%;
+    width: 200px;
+}
+
+ :root * {
+    transition: all 0.5s;
+}
+ <style>{="font-size: 50px:
+
+ }
