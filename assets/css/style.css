@@ -69,6 +69,9 @@ main {
     border-radius: 12px;
     border: 2px solid black;
     margin: 0 auto;
+    box-shadow: 2px 2px 1px 0 #666;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
 }
 
 #apps {
@@ -97,7 +100,7 @@ main {
 }
 
 .info {
-    background: #07d0f3bd;
+    background: rgb(23, 20, 18);
     color: white;
     border-radius: 8px;
     height: 20%;
@@ -116,7 +119,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.7); /* Adds a background for better readability */
-    color: white;
+    color: rgb(15, 7, 1);
     padding: 5px 10px;
     text-decoration: none;
     border-radius: 5px; /* Rounded corners */
@@ -227,6 +230,6 @@ h2 {
  :root * {
     transition: all 0.5s;
 }
- <style>{="font-size: 50px:
+ #style {"font-size: 50px:
 
  }
