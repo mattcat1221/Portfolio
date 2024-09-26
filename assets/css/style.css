@@ -233,3 +233,27 @@ h2 {
  #style {"font-size: 50px:
 
  }
+ /* Flexbox styling for the contact section */
+ .contact {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: left; /* Aligns items vertically */
+    gap: 50px; /* Adds spacing between items */
+}
+
+.contact a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Optional: change the link color */
+}
+
+.contact img {
+    width: 30px; /* Adjust the icon size */
+    height: 30px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.contact a:hover {
+    color: #0077b5; /* Change text color on hover (LinkedIn blue) */
+}
