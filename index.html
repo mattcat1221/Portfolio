@@ -147,13 +147,62 @@
 
 <main>
     </div>
-    <h1>Contacts</h1>
-    <div class="contact">
-        <a href="mailto:caseyvmathhews@gmail.com">Email</a>
-    </div>
-</main>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <style>
+        /* Flexbox styling for the contact section */
+        .contact {
+            display: flex;
+            justify-content: space-between; /* Space between items */
+            align-items: center; /* Aligns items vertically */
+            gap: 20px; /* Adds spacing between items */
+        }
+
+        .contact a {
+            display: flex;
+            align-items: center;
+            text-decoration: none; /* Removes underline from links */
+            color: black; /* Optional: change the link color */
+        }
+
+        .contact img {
+            width: 30px; /* Adjust the icon size */
+            height: 30px;
+            margin-right: 10px; /* Space between icon and text */
+        }
+
+        .contact a:hover {
+            color: #0077b5; /* Change text color on hover (LinkedIn blue) */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Contacts</h1>
+<div class="contact">
+    <!-- Email -->
+    <a href="https://mail.google.com/mail/u/0/#inbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email" class="small-icon">
+        Email
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/mattcat1221" target="_blank">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="small-icon">
+        GitHub
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/catherine-matthews-110337232/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" class="small-icon">
+        LinkedIn
+    </a>
+</div>
 
 <script src="assets/js/script.js"></script>
 </body>
-
 </html>
