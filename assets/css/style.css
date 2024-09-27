@@ -1,4 +1,13 @@
-/* Apply New Amsterdam font to body and h1 elements */
+:root * {
+    /* border: 1px solid red; */
+}
+
+body {
+    background: #e68968;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
 body, h1 {
     font-family: "New Amsterdam", sans-serif;
 }
@@ -14,12 +23,6 @@ header {
     margin: 0;
 }
 
-body {
-    background: #e68968;
-    margin: 0; /* Remove default margin */
-    padding: 20px; /* Add padding to leave some room around the edges */
-    box-sizing: border-box;
-}
 
 #aboutMe {
     display: flex;
@@ -42,15 +45,26 @@ h1 {
     font-style: normal;
 }
 
+#divider1 {
+    height: 200px;
+    background: linear-gradient(-4deg,lavender 50%,black 52%, black 54%, #e68968 55%);
+    margin: 0;
+}
+
+#bg1 {
+    background: lavender;
+    margin: 0;
+    padding: 5%;
+}
+
 main {
-    max-width: 1200px; /* Limit the content width */
-    margin: 20px auto; /* Center the content on the page */
-    padding: 20px; /* Add padding inside the main container */
-    background-color: #f2a391; /* Light terracotta background color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for separation */
-    border-radius: 8px; /* Optional: Rounding the corners */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2a391;
+    border-radius: 8px;
     border: 2px solid #000;
-    box-shadow: 5px 10px 5px black;
+    box-shadow: -9px -5px 0px lightgray,9px -5px 0px lightgray,-9px 6px 0px lightgray,9px 6px 0px lightgray;
 }
 
 #aboutMe {
@@ -69,9 +83,6 @@ main {
     border-radius: 12px;
     border: 2px solid black;
     margin: 0 auto;
-    box-shadow: 2px 2px 1px 0 #666;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
 }
 
 #apps {
@@ -100,7 +111,7 @@ main {
 }
 
 .info {
-    background: rgb(23, 20, 18);
+    background: #07d0f3bd;
     color: white;
     border-radius: 8px;
     height: 20%;
@@ -119,7 +130,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.7); /* Adds a background for better readability */
-    color: rgb(15, 7, 1);
+    color: white;
     padding: 5px 10px;
     text-decoration: none;
     border-radius: 5px; /* Rounded corners */
@@ -230,30 +241,6 @@ h2 {
  :root * {
     transition: all 0.5s;
 }
- #style {"font-size: 50px:
+ <style>{="font-size: 50px:
 
  }
- /* Flexbox styling for the contact section */
- .contact {
-    display: flex;
-    justify-content: space-between; /* Space between items */
-    align-items: left; /* Aligns items vertically */
-    gap: 50px; /* Adds spacing between items */
-}
-
-.contact a {
-    display: flex;
-    align-items: center;
-    text-decoration: none; /* Removes underline from links */
-    color: black; /* Optional: change the link color */
-}
-
-.contact img {
-    width: 30px; /* Adjust the icon size */
-    height: 30px;
-    margin-right: 10px; /* Space between icon and text */
-}
-
-.contact a:hover {
-    color: #0077b5; /* Change text color on hover (LinkedIn blue) */
-}
