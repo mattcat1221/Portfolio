@@ -52,7 +52,7 @@ h1 {
 }
 
 #bg1 {
-    background: lavender;
+    background: #f0ad9e;
     margin: 0;
     padding: 5%;
 }
@@ -60,11 +60,11 @@ h1 {
 #bg1 h1 {
     font-size: 5rem;
     height: 10rem;
-    background: linear-gradient(39deg, transparent 0%, black 80%, black 85%, orange 85%, orange 88%, black 88%);
+    background: linear-gradient(39deg, transparent 0%, black 80%, black 85%, rgb(198, 179, 229) 85%, orange 88%, black 88%);
 }
 
 #bg1 main {
-    background: #03A9F4;
+    background: #ecaa81ab;
     width: 97%;
 }
 
@@ -72,10 +72,10 @@ main {
     width: 85%;
     margin: 20px auto;
     padding: 20px;
-    background-color: #f2a391;
+    background-color: #f0ad9e;
     border-radius: 8px;
     border: 2px solid #000;
-    box-shadow: -9px -5px 0px lightgray,9px -5px 0px lightgray,-9px 6px 0px lightgray,9px 6px 0px lightgray;
+    box-shadow: -9px -5px 0px lavender,9px -5px 0px lightgray,-9px 6px 0px lightgray,9px 6px 0px lightgray;
 }
 
 #aboutMe {
