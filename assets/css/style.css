@@ -66,6 +66,7 @@ h1 {
 #bg1 main {
     background: #ecaa81ab;
     width: 97%;
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3); /* Inset shadow for recessed look */
 }
 
 main {
@@ -74,8 +75,8 @@ main {
     padding: 20px;
     background-color: #f0ad9e;
     border-radius: 8px;
-    border: 2px solid #000;
-    box-shadow: -9px -5px 0px lavender,9px -5px 0px lightgray,-9px 6px 0px lightgray,9px 6px 0px lightgray;
+    border: 2px solid #201e1e;
+    box-shadow: -9px -5px 0px lavender,9px -5px 0px rgb(146, 142, 142),-9px 6px 0px lightgray,9px 6px 0px lightgray;
 }
 
 #aboutMe {
@@ -84,7 +85,7 @@ main {
 
 #me {
     width: 100%;
-    box-shadow: 2px 2px 1px 0 #666;
+    box-shadow: 2px 2px 1px 0 #2f2e2e;
     border-top: 1px solid white;
     border-left: 1px solid white;
 }
